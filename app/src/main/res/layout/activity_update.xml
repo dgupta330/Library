@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrocks.mukul.library.AddActivity">
+
+
+    <TextView
+        android:id="@+id/tvname_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="113dp"
+        android:text="Name"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/etname_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvname_update"
+        android:layout_marginStart="39dp"
+        android:layout_toEndOf="@+id/tvmobile_update"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvmobile_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvname_update"
+        android:layout_below="@+id/etname_update"
+        android:layout_marginTop="50dp"
+        android:text="Mobile"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etmobile_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etname_update"
+        android:layout_below="@+id/etname_update"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="+91" />
+
+    <TextView
+        android:id="@+id/tvemail_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvmobile_update"
+        android:layout_below="@+id/etmobile_update"
+        android:layout_marginTop="56dp"
+        android:text="Email"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etemail_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etmobile_update"
+        android:layout_below="@+id/etmobile_update"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etemail_update"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/tvmobile_update"
+        android:text="Update" />
+
+</RelativeLayout>

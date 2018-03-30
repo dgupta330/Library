@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrocks.mukul.library.SearchActivity">
+
+    <EditText
+        android:id="@+id/etsearch_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Name"/>
+
+    <Button
+        android:id="@+id/btnsearch_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/etsearch_search"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/etsearch_search"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/tvname_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnsearch_search"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="85dp"
+        android:text="Name"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etname_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnsearch_search"
+        android:layout_below="@+id/btnsearch_search"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <TextView
+        android:id="@+id/tvmobile_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvname_search"
+        android:layout_below="@+id/etname_search"
+        android:layout_marginTop="50dp"
+        android:text="Mobile"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etmobile_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etname_search"
+        android:layout_below="@+id/etname_search"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="+91" />
+
+    <TextView
+        android:id="@+id/tvemail_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvmobile_search"
+        android:layout_below="@+id/etmobile_search"
+        android:layout_marginTop="56dp"
+        android:text="Email"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/etemail_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etmobile_search"
+        android:layout_below="@+id/etmobile_search"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+</RelativeLayout>
