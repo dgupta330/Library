@@ -90,7 +90,7 @@ public class CompanyActivity extends AppCompatActivity {
                                     mplandetail.getText().toString(),
                                     mcustcare.getText().toString(),
                                     selectedbtn.getText().toString(),
-                                    imagePath.toString());
+                                    SelectedImageUri.toString());
                             // Inserting Plans
                             boolean res=db.addPlan(plan);
 
@@ -165,7 +165,7 @@ public class CompanyActivity extends AppCompatActivity {
                                 mplandetail.getText().toString(),
                                 mcustcare.getText().toString(),
                                 mtype.getText().toString(),
-                                imagePath.toString());
+                                SelectedImageUri.toString());
                         
                             db.updatePlan(plan);
                             Toast.makeText(getApplicationContext(), "Plan Updated Successfully", Toast.LENGTH_SHORT).show();
@@ -211,6 +211,7 @@ public class CompanyActivity extends AppCompatActivity {
         if (requestCode==RC_PHOTO_PICKER && resultCode==RESULT_OK)
         {   SelectedImageUri =data.getData();
             Glide.with(this).load(SelectedImageUri).into(companyimg);
+
         }
 
     }
