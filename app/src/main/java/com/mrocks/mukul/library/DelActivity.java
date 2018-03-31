@@ -7,10 +7,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.mrocks.mukul.library.DatabaseHelper.CustomerDatabaseHelper;
+
 public class DelActivity extends AppCompatActivity {
     EditText search ;
     Button delete;
-    DatabaseHelper databaseHelper;
+    CustomerDatabaseHelper databaseHelper;
 
 
     @Override
@@ -19,13 +21,13 @@ public class DelActivity extends AppCompatActivity {
         setContentView(R.layout.activity_del);
         search= findViewById(R.id.etdel_del);
         delete=findViewById(R.id.btndel_del);
-        databaseHelper=new DatabaseHelper(this);
+        databaseHelper=new CustomerDatabaseHelper(this);
 
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseHelper.deleteData(search.getText().toString());
-                Toast.makeText(DelActivity.this,"Contact Deleted",Toast.LENGTH_SHORT).show();
+                databaseHelper.deleteData(Integer.parseInt(search.getText().toString()));
+                Toast.makeText(DelActivity.this,"Customer Deleted",Toast.LENGTH_SHORT).show();
             }
         });
 

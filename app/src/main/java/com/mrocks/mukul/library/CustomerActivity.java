@@ -6,23 +6,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.mrocks.mukul.library.DatabaseHelper.CustomerDatabaseHelper;
+
 public class CustomerActivity extends AppCompatActivity {
     Button addbtn,delbtn,updatebtn,searchbtn;
 
-    DatabaseHelper databaseHelper;
+    CustomerDatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_customer);
 
-       // addbtn = findViewById(R.id.add_btn);
+        addbtn = findViewById(R.id.add_btn);
         searchbtn=findViewById(R.id.search_btn);
         delbtn = findViewById(R.id.delete_btn);
         updatebtn=findViewById(R.id.update_btn);
-        // databaseHelper = new DatabaseHelper(this);
+        // databaseHelper = new CustomerDatabaseHelper(this);
 
-      /*  addbtn.setOnClickListener(new View.OnClickListener() {
+       addbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CustomerActivity.this,AddActivity.class);
@@ -30,7 +32,7 @@ public class CustomerActivity extends AppCompatActivity {
 
             }
         });
-        */
+
         searchbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.mrocks.mukul.library.DatabaseHelper.CustomerDatabaseHelper;
 
 public class MainActivity extends AppCompatActivity {
-    DatabaseHelper mydb;
+    CustomerDatabaseHelper mydb;
     ImageButton customer,company,graph;
 
     @Override
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView textView=findViewById(R.id.idtxt);
-         mydb=new DatabaseHelper(this);
+        // mydb=new CustomerDatabaseHelper(this);
          customer=findViewById(R.id.customer_btn);
          customer.setOnClickListener(new View.OnClickListener() {
              @Override

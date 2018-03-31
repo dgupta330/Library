@@ -1,83 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mrocks.mukul.library.AddActivity">
+    android:orientation="vertical"
+    tools:context="com.mrocks.mukul.library.UpdateActivity">
 
 
-    <TextView
-        android:id="@+id/tvname_update"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="113dp"
-        android:text="Name"
-        android:textSize="25sp" />
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvid_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/etname_update"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etid_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tvname_update"
-        android:layout_marginStart="39dp"
-        android:layout_toEndOf="@+id/tvmobile_update"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName" />
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvname_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:text="Name"
+            android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/tvmobile_update"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etname_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/tvname_update"
-        android:layout_below="@+id/etname_update"
-        android:layout_marginTop="50dp"
-        android:text="Mobile"
-        android:textSize="25sp"/>
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvmobile_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/etmobile_update"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etmobile_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="+91"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/etname_update"
-        android:layout_below="@+id/etname_update"
-        android:layout_marginTop="45dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="+91" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvemail_update"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/tvmobile_update"
-        android:layout_below="@+id/etmobile_update"
-        android:layout_marginTop="56dp"
-        android:text="Email"
-        android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/tvemail_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/etemail_update"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etarea_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/etmobile_update"
-        android:layout_below="@+id/etmobile_update"
-        android:layout_marginTop="47dp"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvcompany_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etcompany_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvplanid_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan ID"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etplanid_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvplaindetail_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Details"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etplandetail_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_update"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etemail_update"
-        android:layout_marginStart="35dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="70dp"
-        android:layout_toEndOf="@+id/tvmobile_update"
         android:text="Update" />
 
-</RelativeLayout>
+</LinearLayout>

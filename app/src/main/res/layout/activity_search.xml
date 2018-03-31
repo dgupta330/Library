@@ -1,93 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.mrocks.mukul.library.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
     <EditText
         android:id="@+id/etsearch_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:text=""
-        android:hint="Name"/>
+        android:hint="ID"/>
 
     <Button
         android:id="@+id/btnsearch_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/etsearch_search"
         android:layout_marginStart="19dp"
-        android:layout_toEndOf="@+id/etsearch_search"
         android:text="Search" />
 
-    <TextView
-        android:id="@+id/tvname_search"
-        android:layout_width="wrap_content"
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/btnsearch_search"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="85dp"
-        android:text="Name"
-        android:textSize="25sp"/>
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvid_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/etname_search"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etid_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/btnsearch_search"
-        android:layout_below="@+id/btnsearch_search"
-        android:layout_marginTop="77dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Name" />
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvname_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:text="Name"
+            android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/tvmobile_search"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etname_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/tvname_search"
-        android:layout_below="@+id/etname_search"
-        android:layout_marginTop="50dp"
-        android:text="Mobile"
-        android:textSize="25sp"/>
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvmobile_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/etmobile_search"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etmobile_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="+91"
+            android:inputType="number" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/etname_search"
-        android:layout_below="@+id/etname_search"
-        android:layout_marginTop="45dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="+91" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tvemail_search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/tvmobile_search"
-        android:layout_below="@+id/etmobile_search"
-        android:layout_marginTop="56dp"
-        android:text="Email"
-        android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/tvemail_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:textSize="25sp" />
 
-    <EditText
-        android:id="@+id/etemail_search"
-        android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/etarea_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/etmobile_search"
-        android:layout_below="@+id/etmobile_search"
-        android:layout_marginTop="47dp"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
-</RelativeLayout>
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvcompany_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etcompany_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvplanid_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan ID"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etplanid_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvplaindetail_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plan Details"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etplandetail_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""/>
+    </LinearLayout>
+
+</LinearLayout>
